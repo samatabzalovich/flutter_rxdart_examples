@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rxdart_examples/example1/example1.dart';
+import 'package:flutter_rxdart_examples/example2/example2.dart';
+import 'dart:developer' as devtools show log;
 
+import 'package:flutter_rxdart_examples/example3/example3.dart';
+import 'package:flutter_rxdart_examples/example4/example4.dart';
 
 
 
@@ -10,7 +14,9 @@ void main() {
     const App(),
   );
 }
-
+extension Log on Object {
+  void log() => devtools.log(toString());
+}
 class App extends StatelessWidget {
   const App({
     Key? key,
@@ -35,7 +41,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Example1(),
+        title: const Example4(),
       ),
     );
   }

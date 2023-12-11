@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rxdart_examples/main.dart';
 import 'package:rxdart/rxdart.dart';
-import 'dart:developer' as devtools show log;
-extension Log on Object {
-  void log() => devtools.log(toString());
-}
+
+
 class Example1 extends StatelessWidget {
   const Example1({super.key});
   void testIt() async {
