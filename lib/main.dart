@@ -5,18 +5,20 @@ import 'dart:developer' as devtools show log;
 
 import 'package:flutter_rxdart_examples/example3/example3.dart';
 import 'package:flutter_rxdart_examples/example4/example4.dart';
-
-
-
+import 'package:flutter_rxdart_examples/example5/example5.dart';
+import 'package:flutter_rxdart_examples/example6/example6.dart';
+import 'package:flutter_rxdart_examples/example7/example7.dart';
 
 void main() {
   runApp(
     const App(),
   );
 }
+
 extension Log on Object {
   void log() => devtools.log(toString());
 }
+
 class App extends StatelessWidget {
   const App({
     Key? key,
@@ -39,10 +41,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Example4(),
-      ),
+    return const Scaffold(
+      body: SafeArea(child: Example7()),
     );
   }
 }
